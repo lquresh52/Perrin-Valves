@@ -2585,7 +2585,8 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  /* background: url("../img/footer-bg.jpg") top center no-repeat; */
+  background-color: #126E82;
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
