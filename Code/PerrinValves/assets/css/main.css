@@ -418,6 +418,68 @@ section {
   }
 }
 
+.service_name{
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.view_more_btn{
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+
+.view_more_btn:hover{
+  background-color: var(--hover-color);
+  color: white;
+}
+
+
+.pdf_download_btn{
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px; 
+}
+
+.pdf_download_btn:hover{
+  background-color: var(--hover-color);
+  color: white;
+}
+
+#more_services{
+  display: none;
+  margin-top: -160px !important;
+}
+
+#mybtn2{
+  display: none;
+}
+
+#description{
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.desc_heading{
+  color: var(--color-secondary);
+  font-size: 45px;
+  
+}
+
+.para{
+  font-weight: 500;
+  font-size: large;
+}
+
+.pdf_icon{
+  font-size: 20px;
+}
+
+
+
 @media (min-width: 1280px) and (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
