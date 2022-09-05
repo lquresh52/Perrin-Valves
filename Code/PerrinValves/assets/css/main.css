@@ -1089,6 +1089,11 @@ section {
   overflow: hidden;
 }
 
+.testimonial-item{
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px 30px 30px 60px;
