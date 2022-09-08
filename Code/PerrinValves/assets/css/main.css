@@ -428,18 +428,19 @@ section {
 }
 
 .view_more_btn{
-  background-color: var(--color-secondary);
+  background-color: var(--hover-color);
   color: white;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 30px;
+  border-radius: 8px;
   margin-top: 50px;
   line-height: 1.8rem;
-  width: 180px;
+  /* width: 180px; */
+  font-weight: 600;
 }
 
 
 .view_more_btn:hover{
-  background-color: var(--hover-color);
+  background-color: var(--color-secondary);
   color: white;
 }
 
@@ -447,12 +448,12 @@ section {
 .pdf_download_btn{
   background-color: var(--color-secondary);
   color: white;
-  padding: 10px;
+  padding: 10px 30px;
   border-radius: 8px; 
   font-size: 18px;
   line-height: 2.5rem;
-  width: 250px;
-
+  /* width: 250px; */
+  font-weight: 600;
 }
 
 .pdf_download_btn:hover{
@@ -487,6 +488,7 @@ section {
 
 .pdf_icon{
   font-size: 20px;
+  font-weight: bold;
 }
 
 
