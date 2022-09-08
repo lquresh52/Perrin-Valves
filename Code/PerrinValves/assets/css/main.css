@@ -25,7 +25,10 @@
   /* --color-primary: #FCD900; */
   --color-primary: #51C4D3;
   --color-secondary: #126E82;
-  --hover-color: #e3002a;
+  --hover-color: #023047;
+  --section-color: #caf0f8;
+
+  
 }
 
 /* Smooth scroll behavior */
@@ -70,7 +73,8 @@ section {
 }
 
 .section-bg {
-  background-color: #D8E3E7;
+  /* background-color: #D8E3E7; */
+  background-image: linear-gradient(#99f5e0, #0eb8f5);
 }
 
 .section-header {
@@ -426,8 +430,11 @@ section {
 .view_more_btn{
   background-color: var(--color-secondary);
   color: white;
-  padding: 8px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 50px;
+  line-height: 1.8rem;
+  width: 180px;
 }
 
 
@@ -440,8 +447,12 @@ section {
 .pdf_download_btn{
   background-color: var(--color-secondary);
   color: white;
-  padding: 10px 20px;
-  border-radius: 4px; 
+  padding: 10px;
+  border-radius: 8px; 
+  font-size: 18px;
+  line-height: 2.5rem;
+  width: 250px;
+
 }
 
 .pdf_download_btn:hover{
@@ -451,7 +462,7 @@ section {
 
 #more_services{
   display: none;
-  margin-top: -160px !important;
+  margin-top: 25px !important;
 }
 
 #mybtn2{
@@ -795,6 +806,85 @@ section {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+
+
+.speciality h2 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  margin: 30px 0;
+}
+
+@media (min-width: 991px) {
+  .speciality h2 {
+    max-width: 65%;
+    margin: 0 0 80px 0;
+  }
+}
+
+.speciality .our-story {
+  padding: 40px;
+  /* background-color: #f5f6f7; */
+}
+
+@media (min-width: 991px) {
+  .speciality .our-story {
+    padding-right: 35%;
+  }
+}
+
+.speciality .our-story h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #838893;
+}
+
+.speciality .our-story h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-secondary);
+}
+
+.speciality .our-story p:last-child {
+  margin-bottom: 0;
+}
+
+.speciality ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.speciality ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.speciality ul i {
+  font-size: 20px;
+  margin-right: 4px;
+  color: var(--color-primary);
+}
+
+.speciality .speciality-img {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 992px) {
+  .speciality .speciality-img {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+}
+
+
+
+
 .services .service-item {
   border-radius: 20px;
   padding: 40px;
@@ -1286,7 +1376,7 @@ section {
 
 .about .our-story {
   padding: 40px;
-  background-color: #f5f6f7;
+  background-color: var(--section-color);
 }
 
 @media (min-width: 991px) {
