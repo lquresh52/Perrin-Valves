@@ -805,7 +805,33 @@ section {
   margin: 0;
 }
 
-/*--------------------------------------------------------------
+/*****************************************
+PopUP Service details
+******************************************/
+.popup-body h4 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: var(--font-default);
+  margin: 8px 0px 8px 0px;
+  color: var(--color-default);
+}
+
+#download-button{
+  background-color: transparent;
+  color: var(--color-default);
+  padding: 8px;
+  border-radius: 8px; 
+  font-size: 18px;
+  /* width: 250px; */
+  font-weight: 500;
+}
+
+#download-button:hover{
+  background-color: var(--hover-color);
+  color: white;
+}
+
+ /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 

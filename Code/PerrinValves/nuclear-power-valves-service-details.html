@@ -176,7 +176,30 @@
             </p>
           </div>
           <div class="col text-center">
-          <a href="assets\PDFS\PERRIN_2_Wege_KH.pdf" download="PERRIN_2_Wege_KH.pdf" class="btn pdf_download_btn align-items-center"><i class="fa-sharp fa-solid fa-file-pdf pdf_icon"></i> Get more information</a>
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn pdf_download_btn align-items-center"><i class="fa-sharp fa-solid fa-file-pdf pdf_icon"></i> Get more information</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content  popup-body">
+            <div class="modal-header">
+              <h4>Please Enter your Email ID</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-email" class="col-form-label">Email</label>
+                  <input type="email" class="form-control" id="recipient-email" required>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+               <a href="assets\PDFS\PERRIN_2_Wege_KH.pdf"> <button id="download-button" type="button" download="PERRIN_2_Wege_KH.pdf">Download</button> </a>
+            </div>
           </div>
         </div>
       </div>
@@ -290,6 +313,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+    })
+  </script>
 
 </body>
 
