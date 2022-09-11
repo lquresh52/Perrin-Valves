@@ -831,6 +831,12 @@ PopUP Service details
   color: white;
 }
 
+.form-control:focus{
+  box-shadow: 0 0 5px var(--color-default);
+  /* outline: none !important; */
+  border-color: var(--color-primary) ; 
+}
+
  /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
