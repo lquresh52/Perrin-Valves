@@ -515,6 +515,7 @@ section {
   /* border-top-right-radius: 25px;
   border-top-left-radius: 25px; */
   border-radius: 15px;
+  filter: brightness(60%);
 }
 
 
@@ -562,6 +563,18 @@ section {
 .container .card1:hover .slide.slide1{
   transform: translateY(0px);
 }
+
+.card_div{
+  height: 350px;
+  transition: 0.5s;
+  transition-delay: .3s;
+}
+
+.card_div:hover{
+  height: 500px;
+  transition: 0.5s ;
+}
+
 .container .card1:hover .slide.slide1 .myimg{
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
