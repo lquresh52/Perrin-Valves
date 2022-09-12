@@ -566,8 +566,8 @@ section {
 
 .card_div{
   height: 350px;
-  transition: 0.5s;
-  transition-delay: .3s;
+  transition: 0.3s;
+  transition-delay: .5s;
 }
 
 .card_div:hover{
