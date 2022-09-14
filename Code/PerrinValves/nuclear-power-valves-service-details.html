@@ -143,20 +143,20 @@
 
     <!-- ======= Service Details Section ======= -->
     <section id="service-details" class="service-details">
+      <div class="services-list">
+        <a href="#kh-11" class="active">KH-11</a>
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="row gy-4 service_info">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="services-list">
-              <a href="#kh-11" class="active">KH-11</a>
-            </div>
+          
 
             <!-- <h4>Nuclear Power Valves</h4>
             <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p> -->
           </div>
 
-          <div class="col-lg-8">
+          <div class="col-lg-8 offset-lg-4">
 
             <img src="assets/img/service-image.jpg" alt="" class="img-fluid services-img" style="border-radius: 20px 20px;">
             <h2 id="kh-11" class="text-center">KH-11</h2>
@@ -325,6 +325,22 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <script>
+    stickyElem = document.querySelector(".services-list");
+    currStickyPos = stickyElem.getBoundingClientRect().top + window.pageYOffset;
+    window.onscroll = function() {
+         if(window.pageYOffset > currStickyPos) {
+             stickyElem.style.position = "fixed";
+             stickyElem.style.top = "20px";
+         } else {
+             stickyElem.style.position = "relative";
+             stickyElem.style.top = "initial";
+         }
+     }
+
+  </script>
 
 </body>
 
