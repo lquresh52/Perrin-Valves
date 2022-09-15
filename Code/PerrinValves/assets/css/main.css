@@ -1938,15 +1938,11 @@ PopUP Service details
 --------------------------------------------------------------*/
 .service-details .services-list {
   padding: 10px 30px;
-  /* border: 1px solid #d5d7da; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   margin-bottom: 20px;
-  /* position: relative; */
   width: 25%;
- left: 50px;
-  /* top: 0; */
-  /* z-index: 10000; */
+  margin-left: 50px;
 }
 
 
@@ -1957,6 +1953,8 @@ PopUP Service details
     left: 0;
     z-index: 10;
     position: fixed;
+    margin-left: 0px;
+    top: 10px;
    
   }
   .service_info{

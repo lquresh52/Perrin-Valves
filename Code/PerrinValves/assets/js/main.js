@@ -210,3 +210,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+stickyElem = document.querySelector(".services-list");
+        currStickyPos = stickyElem.getBoundingClientRect().top + window.pageYOffset;
+        window.onscroll = function() {
+             if(window.pageYOffset > currStickyPos) {
+                 stickyElem.style.position = "fixed";
+                 stickyElem.style.top = "20px";
+             } else {
+                 stickyElem.style.position = "relative";
+                 stickyElem.style.top = "initial";
+             }
+         }
