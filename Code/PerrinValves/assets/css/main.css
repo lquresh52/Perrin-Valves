@@ -429,7 +429,7 @@ section {
   border-bottom: 4px solid #ebebed;
   transition: 0.3s;
   margin: 0 0 20px 0;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
 }
 
 .slide :hover h3 {
@@ -586,7 +586,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0px 10px;
   box-sizing: border-box;
   transition: .8s;
   transform: translateY(-150px);
@@ -607,10 +607,12 @@ section {
 }
 
 .container .card1 .slide.slide2 .content p {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   text-align: center;
   color: #414141;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 /* .container .card1 .slide.slide2 .content h3 {
@@ -1937,17 +1939,16 @@ PopUP Service details
 # Service Details Section
 --------------------------------------------------------------*/
 .service-details .services-list {
-  padding: 10px 30px;
-  /* border: 1px solid #d5d7da; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 20px 20px;
+  padding: 1px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
   margin-bottom: 20px;
 }
 
 .service-details .services-list a {
   display: block;
   line-height: 1;
-  padding: 8px 0 8px 15px;
+  padding: 8px 0px 8px 15px;
   border-left: 3px solid #d9e3e8;
   margin: 20px 0;
   color: var(--color-secondary);
@@ -1964,7 +1965,11 @@ PopUP Service details
 }
 
 .service-details .services-img {
-  margin-bottom: 20px;
+  display: block;
+  margin: auto;
+  max-height: 500px;
+  max-width: 500px;
+  border-radius: 8px;
 }
 
 .service-details h3 {
