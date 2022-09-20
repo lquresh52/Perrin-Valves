@@ -430,6 +430,7 @@ section {
   transition: 0.3s;
   margin: 0 0 20px 0;
   padding-bottom: 2px;
+  font-size: 20px;
 }
 
 .slide :hover h3 {
@@ -611,7 +612,7 @@ section {
   padding: 0px;
   text-align: center;
   color: #414141;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
 }
 
