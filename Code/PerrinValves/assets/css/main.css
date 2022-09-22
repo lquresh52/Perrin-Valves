@@ -274,8 +274,9 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 43px;
   margin-right: 6px;
+  filter: brightness(130%);
 }
 
 .header .logo h1 {
