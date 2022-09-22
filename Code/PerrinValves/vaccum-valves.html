@@ -517,11 +517,14 @@
             show: false,
         });
 
+        var host = window.location.host;
+
         $(document).on("click", ".modalButton", function() {
             $('#modalForm')[0].reset();
             var pdfFile = $(this).data("name");
-            var url = 'http://127.0.0.1:5500/assets/PDFS/'+pdfFile+'.pdf';
-            console.log(url);
+            // var url = 'http://127.0.0.1:5500/assets/PDFS/'+pdfFile+'.pdf';
+            var url = 'http://'+host+'/assets/PDFS/'+pdfFile+'.pdf';
+            
             $.ajax({
                 url: url,
                 success: function(data) {
