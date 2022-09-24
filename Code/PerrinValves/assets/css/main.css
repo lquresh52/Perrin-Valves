@@ -1974,6 +1974,12 @@ PopUP Service details
   border-radius: 8px;
 }
 
+@media (max-width:900px) {
+  .service-details .services-img {
+    max-width: 100%;
+  }
+}
+
 .service-details h3 {
   font-size: 28px;
   font-weight: 700;
