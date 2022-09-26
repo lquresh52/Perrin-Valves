@@ -506,8 +506,9 @@
             $('#modalForm')[0].reset();
             var pdfFile = $(this).data("name");
             // var url = 'http://127.0.0.1:5500/assets/PDFS/'+pdfFile+'.pdf';
-            var url = newUrl+''+pdfFile+'.pdf';
+            // var url = newUrl+''+pdfFile+'.pdf';
             // alert('FINAL URL: ' + url);
+            var url = 'assets/PDFS/'+pdfFile+'.pdf';
             $.ajax({
                 url: url,
                 success: function(data) {
@@ -520,10 +521,9 @@
                   // Error handling
                 } 
             });
-
             $('#exampleModal').modal('show');
         });
-
+        
       });
     </script>
 
