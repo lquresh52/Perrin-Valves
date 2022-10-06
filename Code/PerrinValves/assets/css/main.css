@@ -3095,13 +3095,178 @@ PopUP Service details
   height: 400px;
 }
 
+/************************
+# Qualification
+*************************/
+
+.qualification ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.qualification ul li {
+  padding: 4px 0;
+}
+
+.qualification ul i {
+  font-size: 20px;
+  margin-right: 4px;
+  color: var(--color-primary);
+}
+
+.qualification-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+@media (min-width: 992px) {
+  .qualification-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .qualification-img img{
+   height: 300px;
+   width: 300px; 
+   margin: 15px;
+  }
+}
+
+.qualification .our-story {
+  padding-left: 40px;
+}
+
+@media (min-width: 991px) {
+  .qualification .our-story {
+    padding-right: 35%;
+  }
+}
+
+.qualification .our-story h3 {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 20px 0px 20px 0px;
+  color: var(--color-secondary);
+}
+
+.qualification .our-story p:last-child {
+  margin-bottom: 0;
+}
+
+.scrolling-part .content {
+  padding: 30px 0;
+  width: 100%;
+}
+
+.scrolling-part .content h3 {
+  font-size: 36px;
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  text-align: center;
+}
 
 
+.scrolling-part .content p {
+  font-size: 14px;
+}
 
+#scroll-container {
+  
+  height: 180px;
+  overflow: hidden;
+  
+}
 
+#scroll-text {
+  height: 100%;
+  text-align: center;
+  
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(-260%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 20s linear infinite;
+  -webkit-animation: my-animation 20s linear infinite;
+  animation: my-animation 20s linear infinite;
+}
 
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(-260%); }
+}
 
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-260%); }
+}
 
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-260%);
+    -webkit-transform: translateY(-260%);
+    transform: translateY(-260%);
+  }
+}
 
+@media (max-width: 768px) {
+  #scroll-text {
+    height: 100%;
+    text-align: center;
+    
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(-560%);
+    transform: translateY(100%);
+    
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 30s linear infinite;
+  }
 
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-550%); }
+  }
+
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-550%); }
+  }
+
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-550%);
+      -webkit-transform: translateY(-550%);
+      transform: translateY(-550%);
+    }
+  }
+}
 
