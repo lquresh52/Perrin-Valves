@@ -3281,3 +3281,10 @@ PopUP Service details
   }
 }
 
+/* 
+  Terms & Services
+*/
+
+.term-services ol > li::marker {
+  font-weight: bold;
+}
