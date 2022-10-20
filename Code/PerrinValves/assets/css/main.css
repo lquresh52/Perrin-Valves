@@ -1262,6 +1262,33 @@ PopUP Service details
 
 }
 
+.contentdiv{
+  min-width: 200px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid var(--section-color); */
+}
+
+
+
+@media (max-width: 575px) {
+  .contentdiv{
+    min-width: 150px;
+  min-height: 150px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 .projects .portfolio-content {
   position: relative;
   overflow: hidden;
