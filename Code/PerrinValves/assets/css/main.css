@@ -3108,6 +3108,12 @@ PopUP Service details
   color: var(--color-primary);
 }
 
+.footer-logo img{
+  max-height: 55px;
+  margin-bottom: 8px;
+  filter: brightness(130%);
+}
+
 /*--------------------------------------------------------------
 # Footer End
 --------------------------------------------------------------*/
@@ -3310,10 +3316,66 @@ PopUP Service details
   }
 }
 
-/* 
+/********************************************** 
   Terms & Services
-*/
+***********************************************/
 
 .term-services ol > li::marker {
   font-weight: bold;
+}
+
+.terms .dropdown ul {
+  display: block;
+  position: absolute;
+  right: 28px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background-color:var(--color-default);;
+  
+  transition: 0.3s;
+}
+
+.terms .dropdown ul li {
+  min-width: 200px;
+}
+
+.terms .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+  color: var(--color-default);
+  font-weight: 400;
+}
+
+.terms .dropdown ul a i {
+  font-size: 12px;
+}
+
+.terms .dropdown ul a:hover,
+.terms .dropdown ul .active:hover,
+.terms .dropdown ul li:hover>a {
+  color: var(--color-primary);
+}
+
+.terms .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.terms .dropdown .dropdown ul {
+  top: 0;
+  right: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.terms .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  right: 100%;
+  visibility: visible;
 }
