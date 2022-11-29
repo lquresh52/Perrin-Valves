@@ -205,18 +205,20 @@
             <a href="#"><span> Certificates </span>
               <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-                <li>
-                    <a href="./assets/Qualification PDF/DIN_EN_ISO_9001_2015.pdf" target="_blank">ISO 9001 - 2015</a>
-                </li>
-                <li>
-                    <a href="./assets/Qualification PDF/API-6D-certificate.pdf" target="_blank">API 6D Certificate</a>
-                </li>
-                <li>
-                    <a href="./assets/Qualification PDF/Helium_leak_test_new.pdf" target="_blank">Helium Leak Test Certificate</a>
-                </li>
-                <li>
-                    <a href="./assets/Qualification PDF/FE_15848_Certificate_Zertifikat_D30.pdf" target="_blank">Fugitive Emission Test Certificate</a>
-                </li>
+              <li>
+                <a href="./assets/Qualification PDF/DIN_EN_ISO_9001_2015.pdf" target="_blank">ISO 9001 - 2015</a>
+              </li>
+              <li>
+                <a href="./assets/Qualification PDF/API-6D-certificate.pdf" target="_blank">API 6D Certificate</a>
+              </li>
+              <li>
+                <a href="./assets/Qualification PDF/Helium_leak_test_new.pdf" target="_blank">Helium Leak Test
+                  Certificate</a>
+              </li>
+              <li>
+                <a href="./assets/Qualification PDF/FE_15848_Certificate_Zertifikat_D30.pdf" target="_blank">Fugitive
+                  Emission Test Certificate</a>
+              </li>
             </ul>
           </li>
           <li><a href="index.html#projects">Customers</a></li>
@@ -265,7 +267,8 @@
 
 
     <section class="section-bg ">
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+        data-bs-interval="5000">
         <div class="carousel-inner">
           <div class="carousel-item active d-flex justify-content-center">
             <img class="card-img-top" src="assets/img/perrin-testing/testing-4.jpg" alt="Card image cap">
@@ -389,36 +392,57 @@
           </div>
 
           <div class="col-lg-5" data-aos="fade">
-            <form action="forms/quote.php" method="post" class="php-email-form">
+            <script type="text/javascript">
+              var submitted = false;
+            </script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted) {
+                document.getElementById('qet_quote_form').reset();
+                document.getElementById('sent-message').style.display = 'block';
+                console.log('Form submitted in sleep start');
+                let timeout = setTimeout(alertFunc, 8000);
+
+                function alertFunc(){
+                  console.log('Form submitted in sleep complted');
+                  document.getElementById('sent-message').style.display = 'none';
+                }
+                
+              }">
+            </iframe>
+
+            <form id="qet_quote_form"
+              action="https://docs.google.com/forms/u/5/d/e/1FAIpQLScN8tdsGTL9V0A-Z8cTx5GaFHheukQsXkxEgaREbZ1L2nnK0A/formResponse"
+              method="POST" mode="cors" target="hidden_iframe" class="php-email-form" onsubmit="submitted=true">
               <h3>Get a quote</h3>
               <p>Please fill this form accurately for better assistance.</p>
               <div class="row gy-3">
 
-                <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required>
-                </div>
 
-                <div class="col-md-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                <div class="col-md-12">
+                  <input type="text" name="entry.1460295446" class="form-control" placeholder="Name" required />
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                  <input type="email" class="form-control" name="entry.1445615037" placeholder="Email" required />
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  <input type="number" class="form-control" name="entry.1511921744" placeholder="Phone" required />
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="entry.1999814488" rows="6" placeholder="Message"
+                    required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!
+                  <div class="sent-message" id="sent-message">
+                    Your quote request has been sent successfully. Thank you!
                   </div>
 
                   <button type="submit">Get a quote</button>
                 </div>
-
               </div>
             </form>
           </div>
@@ -480,7 +504,7 @@
                   </ul>
                 </li>
               </div>
-              
+
               <li><a href="privacy-policy.html">Privacy policy</a></li>
             </ul>
           </div>
