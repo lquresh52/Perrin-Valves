@@ -204,27 +204,29 @@
             <a href="#"><span> Certificates </span>
               <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-                <li>
-                    <a href="./assets/Qualification PDF/DIN_EN_ISO_9001_2015.pdf" target="_blank">ISO 9001 - 2015</a>
-                </li>
-                <li>
-                    <a href="./assets/Qualification PDF/API-6D-certificate.pdf" target="_blank">API 6D Certificate</a>
-                </li>
-                <li>
-                    <a href="./assets/Qualification PDF/Helium_leak_test_new.pdf" target="_blank">Helium Leak Test Certificate</a>
-                </li>
-                <li>
-                    <a href="./assets/Qualification PDF/FE_15848_Certificate_Zertifikat_D30.pdf" target="_blank">Fugitive Emission Test Certificate</a>
-                </li>
+              <li>
+                <a href="./assets/Qualification PDF/DIN_EN_ISO_9001_2015.pdf" target="_blank">ISO 9001 - 2015</a>
+              </li>
+              <li>
+                <a href="./assets/Qualification PDF/API-6D-certificate.pdf" target="_blank">API 6D Certificate</a>
+              </li>
+              <li>
+                <a href="./assets/Qualification PDF/Helium_leak_test_new.pdf" target="_blank">Helium Leak Test
+                  Certificate</a>
+              </li>
+              <li>
+                <a href="./assets/Qualification PDF/FE_15848_Certificate_Zertifikat_D30.pdf" target="_blank">Fugitive
+                  Emission Test Certificate</a>
+              </li>
             </ul>
           </li>
           <li><a href="index.html#projects">Customers</a></li>
-          <li><a href="contact.html"  class="active">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
       <!-- .navbar -->
     </div>
-  </header>  <!-- End Header -->
+  </header> <!-- End Header -->
 
   <main id="main">
 
@@ -250,8 +252,10 @@
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-map"></i>
               <h3>Our Address</h3>
-              <p style="font-weight: 700;">Perrin Valves Pvt. Ltd., <br>LF 12 A & LF 12 B, 4th Floor, Lotus Aura 1,<br> Opp. Lilleria Party Plot, Sama Savli Road, 
-                <br>Vadodara – 390008, Gujarat (India).</p>
+              <p style="font-weight: 700;">Perrin Valves Pvt. Ltd., <br>LF 12 A & LF 12 B, 4th Floor, Lotus Aura 1,<br>
+                Opp. Lilleria Party Plot, Sama Savli Road,
+                <br>Vadodara – 390008, Gujarat (India).
+              </p>
             </div>
           </div><!-- End Info Item -->
 
@@ -259,9 +263,9 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
-              <p style="font-weight: 700;"><a href = "mailto: sales@pvpl.in">sales@pvpl.in</a></p>
+              <p style="font-weight: 700;"><a href="mailto: sales@pvpl.in">sales@pvpl.in</a></p>
               <br>
-              <p style="font-weight: 700;"><a href = "mailto: pvpl@ymail.com">pvpl@ymail.com</a></p>
+              <p style="font-weight: 700;"><a href="mailto: pvpl@ymail.com">pvpl@ymail.com</a></p>
             </div>
           </div><!-- End Info Item -->
 
@@ -284,25 +288,49 @@
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+            <script type="text/javascript">
+              var submitted = false;
+            </script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted) {
+                document.getElementById('qet_quote_form').reset();
+                document.getElementById('sent-message').style.display = 'block';
+                console.log('Form submitted in sleep start');
+                let timeout = setTimeout(alertFunc, 8000);
+
+                function alertFunc(){
+                  console.log('Form submitted in sleep complted');
+                  document.getElementById('sent-message').style.display = 'none';
+                }
+                
+              }">
+            </iframe>
+
+            <form id="qet_quote_form"
+              action="https://docs.google.com/forms/u/5/d/e/1FAIpQLScN8tdsGTL9V0A-Z8cTx5GaFHheukQsXkxEgaREbZ1L2nnK0A/formResponse"
+              method="POST" mode="cors" target="hidden_iframe" class="php-email-form" onsubmit="submitted=true">
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="entry.1460295446" class="form-control" id="name" placeholder="Your Name"
+                    required>
                 </div>
                 <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="entry.1445615037" id="email" placeholder="Your Email"
+                    required>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="entry.1511921744" id="subject" placeholder="Phone Number"
+                  required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="entry.1999814488" rows="5" placeholder="Message"
+                  required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message" id="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
@@ -364,7 +392,7 @@
                   </ul>
                 </li>
               </div>
-              
+
               <li><a href="privacy-policy.html">Privacy policy</a></li>
             </ul>
           </div>
@@ -424,7 +452,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

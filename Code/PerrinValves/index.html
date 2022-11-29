@@ -647,12 +647,25 @@
 
           <div class="col-lg-5" data-aos="fade">
 
-            <script type="text/javascript">var submitted = false;</script>
+            <script type="text/javascript">
+              var submitted = false;
+            </script>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-              onload="if(submitted) {alert('Thank you for contacting us – we will get back to you soon!');}">
+              onload="if(submitted) {
+                document.getElementById('qet_quote_form').reset();
+                document.getElementById('sent-message').style.display = 'block';
+                console.log('Form submitted in sleep start');
+                let timeout = setTimeout(alertFunc, 8000);
+
+                function alertFunc(){
+                  console.log('Form submitted in sleep complted');
+                  document.getElementById('sent-message').style.display = 'none';
+                }
+                
+              }">
             </iframe>
 
-            <form
+            <form id="qet_quote_form"
               action="https://docs.google.com/forms/u/5/d/e/1FAIpQLScN8tdsGTL9V0A-Z8cTx5GaFHheukQsXkxEgaREbZ1L2nnK0A/formResponse"
               method="POST" mode="cors" target="hidden_iframe" class="php-email-form" onsubmit="submitted=true">
               <h3>Get a quote</h3>
@@ -669,7 +682,7 @@
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="entry.1511921744" placeholder="Phone" required />
+                  <input type="number" class="form-control" name="entry.1511921744" placeholder="Phone" required />
                 </div>
 
                 <div class="col-md-12">
@@ -680,7 +693,7 @@
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">
+                  <div class="sent-message" id="sent-message">
                     Your quote request has been sent successfully. Thank you!
                   </div>
 
